@@ -1,0 +1,29 @@
+﻿#############
+# By Mapno  #
+#############
+add_namespace = turkey
+
+
+country_event = {
+	id = turkey.1
+	title = turkey.1.t
+	desc = turkey.1.d
+	picture = GFX_
+
+	is_triggered_only = yes
+
+	option = {
+	name = turkey.1.a
+		
+		ai_chance = {
+			base = 5
+		}
+	}
+
+	option = {
+	name = turkey.1.b
+		ai_chance = {
+			base = 5
+		}
+	}
+}

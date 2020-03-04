@@ -209,6 +209,17 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Şefik Hüsnü"
+	desc = "POLITICS_SEFIK_HUSNU_DESC"
+	picture = "gfx/leaders/TUR/Portrait_Turkey_Sefik_Husnu.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
 	name = "Reşat Fuat Baraner"
 	desc = "POLITICS_SEFIK_HUSNU_DESC"
 	picture = "gfx/leaders/TUR/r56_portrait_TUR_Resat_Fuat_Baraner.dds"
