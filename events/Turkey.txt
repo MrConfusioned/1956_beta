@@ -4,6 +4,7 @@
 add_namespace = turkey
 
 
+
 country_event = {
 	id = turkey.1
 	title = turkey.1.t
