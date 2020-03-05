@@ -170,7 +170,7 @@ country = {
 				original_tag = TUR
 			}
 
-			traits = { staunch_traditionalist }
+			traits = { silent_workhorse }
 		}
 
 		TUR_mumtaz_okmen = {
