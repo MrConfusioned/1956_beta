@@ -1753,7 +1753,7 @@ focus = {
 
 	focus = {
 		id = TUR_continued_kemalism
-		icon = GFX
+		icon = GFX_goal_TUR__kemnal
 
 		x = 35
 		y = 0
@@ -1770,7 +1770,7 @@ focus = {
 
 	focus = {
 		id = TUR_the_return_of_husnu
-		icon = GFX
+		icon = GFX_goal_TUR_husnu
 
 		x = 28
 		y = 0
