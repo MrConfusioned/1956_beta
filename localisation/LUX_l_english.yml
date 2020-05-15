@@ -1,6 +1,20 @@
 ﻿l_english:
 
-#Focus
+#Focues and related custom TT's
+ LUX_foster_an_european_community:0 "Foster A European Community "
+ LUX_foster_an_european_community_desc:0 "European Nations have a lot more in common with each other that they think. We have to use every inch of politcal muscle we have to foster a sense of community and collaboration to help Europe face the political challenges that lay ahead."
+ LUX_foster_an_european_community_TT:0 "(§YEvery Democratic European Nation§!) Gains §YIncrease in opinion§! (Opinion of §Y[LUX.GetFlag][LUX.GetName]§! §G+5§!.)"
+ LUX_adjust_our_forign_policy:0 "Adjust Our Forign Policy"
+ LUX_adjust_our_forign_policy_desc:0 "The political situation of our country has changed ten-fold since The London Conference. We cannot stand back and let our neighbors be the master of our fate. We need to be proactive in global politics."
+ LUX_stand_agaisnt_authoritarianism:0 "Stand Agaisnt Authoritarianism"
+ LUX_stand_agaisnt_authoritarianism_desc:0 "Many Western European nations believe that nationalistic authoritarian governments and autarky will do more than governments that stand for the people. We must make a stand against these notions at home and abroad."
+ LUX_expeditionary_doctrine:0 "Expeditionary Doctrine"
+ LUX_expeditionary_doctrine_desc:0 "We have to face the fact that our military is infrant compared to other countries, and our authoritarian enemies pride themselves on theirs. How we can influence international armed conflict is by focusing our military into being expeditionaries that help larger nations resist authoritarian imperialism."
+ LUX_politcal_safe_heaven:0 "Politcal Safe Heaven"
+ #
+ LUX_coaltition_with_kpl:0 "Empower the Labor Unions"
+
+ LUX_politcal_safe_heaven_tt:0 "For each §YNeighboring Country§! that is not Communist grain: Politcal Power: §G+10§!. and Change in popularity of Communism: §G1.00%§!."
  prepareforwar:0 "Prepare For War"
  prepareforwar_desc:0 "The war to end all wars ended nothing. As the great powers to our left and right mobilize once again, Luxembourg must be ready to defend her people."
  boostindustry:0 "Boost Industry"
@@ -141,6 +155,9 @@
  luxembourg.14.a:0 "That's politics for you."
 
 #Ideas
+ r56_legacy_of_luxembourg_crisis:0 "Legacy Of the Luxembourg Crisis"
+ r56_lux_stand_agaisnt_authoritarianism: "Stand Agaisnt Authoritarianism"
+ r56_LUX_politcal_safe_heaven:0 "Politcal Safe Heaven"
  LUX_generic_fascist_demagogue:0 "Damian Kratzenberg"
  LUX_generic_democratic_reformer:0 "René Blum"
  LUX_generic_communist_revolutionary:0 "Paul Medinger"

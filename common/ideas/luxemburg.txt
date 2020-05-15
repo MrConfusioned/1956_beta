@@ -1,6 +1,157 @@
 ideas = {
 
 	country = {
+		
+		r56_legacy_of_luxembourg_crisis = {
+			
+			
+			allowed = {
+				original_tag = LUX
+			}
+
+			allowed_civil_war = {
+				always =  no
+			}
+
+			available = {
+				has_war = no
+				is_in_faction = no
+			}
+
+			cancel_if_invalid = yes
+			
+			removal_cost = -1
+
+			picture = neutrality_idea
+	
+			modifier = {
+				join_faction_tension = 0.2
+				send_volunteers_tension = 0.2
+				guarantee_tension = 0.2
+				improve_relations_maintain_cost_factor = -0.2
+				trade_opinion_factor = 0.2
+				ai_get_ally_desire_factor = -20
+			}
+		}
+
+		r56_lux_stand_agaisnt_authoritarianism = {
+			
+			
+			allowed = {
+				original_tag = LUX
+			}
+
+			allowed_civil_war = {
+				always =  no
+			}
+
+			available = {
+				is_subject = no
+				NOT = {
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+
+			cancel_if_invalid = yes
+			
+			removal_cost = -1
+
+			picture = neutrality_idea
+	
+			modifier = {
+				war_support_factor = 0.10
+				fascism_acceptance = -25
+				neutrality_acceptance = -25
+			}
+		}
+
+		
+		r56_LUX_expeditionary_doctrine = {
+			
+			
+			allowed = {
+				original_tag = LUX
+			}
+
+			allowed_civil_war = {
+				always =  no
+			}
+
+			available = {
+				is_subject = no
+				NOT = {
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+
+			cancel_if_invalid = yes
+			
+			removal_cost = -1
+
+			picture = neutrality_idea
+	
+			modifier = {
+				war_support_factor = 0.10
+				send_volunteer_divisions_required = -1
+				lend_lease_tension = -1
+			}
+		}
+
+		r56_LUX_politcal_safe_heaven = {
+			
+			
+			allowed = {
+				original_tag = LUX
+			}
+
+			allowed_civil_war = {
+				always =  no
+			}
+
+			available = {
+				is_subject = no
+				has_capitulated = no
+				NOT = {
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+
+			cancel_if_invalid = yes
+			
+			removal_cost = -1
+
+			picture = neutrality_idea
+	
+			modifier = {
+				MONTHLY_POPULATION = 0.10
+			}
+		}
+
+		r56_LUX_coaltition_with_kpl = { 
+
+			allowed = {
+				original_tag = LUX
+			}
+			
+			available = {
+				has_government = communism
+			}
+
+			cancel_if_invalid = yes
+			
+			removal_cost = -1
+
+			picture = neutrality_idea
+
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				conversion_cost_civ_to_mil_factor = -0.1
+			}
+
+		}
 
 		lux_victor_idea = {
 			
@@ -335,10 +486,9 @@ ideas = {
 			}		
 			traits = { communist_revolutionary }
 			picture = generic_political_advisor_europe_4
-			on_add = {
-				country_event = political.1
+			available = {
+			has_completed_focus = LUX_stand_agaisnt_authoritarianism
 			}
-	
 			do_effect = {
 				NOT = {
 					has_government = communism

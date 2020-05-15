@@ -939,6 +939,7 @@ news_event = {
 		}
 	}
 }
+
 #Tells the player "A Way Out" can be taken 
 
 country_event = {
