@@ -13,6 +13,10 @@
  LUX_politcal_safe_heaven:0 "Politcal Safe Heaven"
  #
  LUX_coaltition_with_kpl:0 "Empower the Labor Unions"
+ #
+ LUX_strengthen_rietspartei_position:0 "Empower the Technocrats"
+ #
+ LUX_armed_republic:0 "Prepare for Confrontations"
 
  LUX_politcal_safe_heaven_tt:0 "For each §YNeighboring Country§! that is not Communist grain: Politcal Power: §G+10§!. and Change in popularity of Communism: §G1.00%§!."
  prepareforwar:0 "Prepare For War"
@@ -158,6 +162,9 @@
  r56_legacy_of_luxembourg_crisis:0 "Legacy Of the Luxembourg Crisis"
  r56_lux_stand_agaisnt_authoritarianism: "Stand Agaisnt Authoritarianism"
  r56_LUX_politcal_safe_heaven:0 "Politcal Safe Heaven"
+ r56_LUX_coaltition_with_kpl:0 "Elevated Labor Unions"
+ r56_LUX_strengthen_rietspartei_position:0 "Elevated Technocrats"
+ r56_LUX_armed_republic:0 "National Defense Act"
  LUX_generic_fascist_demagogue:0 "Damian Kratzenberg"
  LUX_generic_democratic_reformer:0 "René Blum"
  LUX_generic_communist_revolutionary:0 "Paul Medinger"

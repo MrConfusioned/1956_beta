@@ -153,6 +153,51 @@ ideas = {
 
 		}
 
+		r56_LUX_strengthen_rietspartei_position = { 
+
+			allowed = {
+				original_tag = LUX
+			}
+			
+			available = {
+				has_government = communism
+			}
+
+			cancel_if_invalid = yes
+			
+			removal_cost = -1
+
+			picture = neutrality_idea
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.1
+			}
+
+		}
+
+		r56_LUX_armed_republic = {
+			
+			allowed = {
+				original_tag = LUX
+			}
+			
+			available = {
+				has_government = communism
+			}
+
+			cancel_if_invalid = yes
+			
+			removal_cost = -1
+
+			picture = neutrality_idea
+
+			modifier = {
+				mobilization_speed = 0.1
+				conscription_factor = 0.1
+			}
+		}
+
 		lux_victor_idea = {
 			
 			

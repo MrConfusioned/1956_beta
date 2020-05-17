@@ -60,7 +60,7 @@ focus_tree = {
 		icon = GFX_goal_POL_three_year_plan
 		prerequisite = { focus = }
 		mutually_exclusive = { focus = LUX_empower_the_chamber_of_deputies }
-		x = 0
+		x = 1
 		y = 0
 		
 
@@ -844,7 +844,7 @@ focus_tree = {
 		id = LUX_adjust_our_forign_policy
 		icon = GFX_goal_consitution
 		prerequisite = { focus = LUX_foster_an_european_community focus = LUX_empower_the_chamber_of_deputies }
-		x = 3
+		x = 2
 		y = 4
 		relative_position_id = LUX_foster_an_european_community
 
@@ -917,7 +917,7 @@ focus_tree = {
 		id = LUX_stand_agaisnt_authoritarianism
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		prerequisite = { focus = LUX_foster_an_european_community }
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = LUX_foster_an_european_community
 
@@ -1013,7 +1013,7 @@ focus_tree = {
 		id = LUX_expeditionary_doctrine
 		icon = GFX_goal_indochina_yen_bai_mutiny
 		prerequisite = { focus = LUX_foster_an_european_community }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = LUX_foster_an_european_community
 
@@ -1054,7 +1054,7 @@ focus_tree = {
 		prerequisite = { focus = LUX_stand_agaisnt_authoritarianism }
 		prerequisite = { focus = LUX_expeditionary_doctrine }
 
-		x = 1
+		x = 0
 		y = 2
 		relative_position_id = LUX_foster_an_european_community
 
@@ -1164,11 +1164,11 @@ focus_tree = {
 
 	focus = {
 		id = LUX_coaltition_with_kpl
-		icon = GFX_
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		prerequisite = { focus = LUX_politcal_safe_heaven }
 		mutually_exclusive = { focus = LUX_strengthen_rietspartei_position }
 
-		x = 0
+		x = -1
 		y = 3
 		relative_position_id = LUX_foster_an_european_community
 
@@ -1193,15 +1193,12 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_extra_state_shared_building_slots = 1
 			add_tech_bonus = {
 				name = construction_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = construction_tech
 			}
@@ -1211,11 +1208,11 @@ focus_tree = {
 
 	focus = {
 			id = LUX_strengthen_rietspartei_position
-			icon = GFX_
+			icon = GFX_goal_generic_business_bills
 			prerequisite = { focus = LUX_politcal_safe_heaven }
 			mutually_exclusive = { focus = LUX_coaltition_with_kpl }
 	
-			x = 2
+			x = 1
 			y = 3
 			relative_position_id = LUX_foster_an_european_community
 	
@@ -1247,17 +1244,23 @@ focus_tree = {
 			}
 	
 			completion_reward = {
-	
-	
+				add_extra_state_shared_building_slots = 1
+				add_tech_bonus = {
+					name = electronics_bonus
+					bonus = 1
+					uses = 1
+					category = electronics
+				}
+				add_ideas = r56_LUX_strengthen_rietspartei_position
 			}
 		}
 
 	focus = {
 		id = LUX_armed_republic
-		icon = GFX_
+		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = LUX_strengthen_rietspartei_position focus = LUX_coaltition_with_kpl }
 
-		x = 1
+		x = 0
 		y = 4
 		relative_position_id = LUX_foster_an_european_community
 
@@ -1268,6 +1271,7 @@ focus_tree = {
 		}
 
 		available = {
+			has_full_control_of_state = 8
 			NOT = {
 				OR = {
 					has_government = fascism
@@ -1276,31 +1280,82 @@ focus_tree = {
 			}
 		}
 
-		bypass = {
-
-		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
-
-
+			8 = {
+			add_extra_state_shared_building_slots = 1
+			}
+			8 = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+				}
+				set_state_flag = LUX_Expand_Infra
+			}
+			8 = {
+				if = {
+					limit = {
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 6583
+						instant_build = yes
+					}
+				}
+			}
+			8 = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = LUX_Expand_air
+			}
+			8 = {
+				limit = {
+					free_building_slots = {
+						building = anti_air_building
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1		
+					instant_build = yes
+				}
+				set_state_flag = LUX_Expand_anti_air
+			}
+			add_ideas = r56_LUX_armed_republic
 		}
 	}
 
 	focus = {
 		id = LUX_demand_french_guarantee
-		icon = GFX_
+		icon = GFX_focus_chi_reach_out_to_france
 		prerequisite = { focus = LUX_armed_republic }
 		prerequisite = { focus = LUX_adjust_our_forign_policy }
 
-		x = 2
+		x = 1
 		y = 5
 		relative_position_id = LUX_foster_an_european_community
 
@@ -1343,7 +1398,7 @@ focus_tree = {
 		prerequisite = { focus = LUX_demand_french_guarantee }
 		prerequisite = { focus = LUX_coaltition_with_kpl }
 
-		x = 0
+		x = -1
 		y = 6
 		relative_position_id = LUX_foster_an_european_community
 
@@ -1385,7 +1440,7 @@ focus_tree = {
 		icon = GFX_
 		prerequisite = { focus = LUX_demand_french_guarantee }
 
-		x = 2
+		x = 1
 		y = 6
 		relative_position_id = LUX_foster_an_european_community
 
@@ -1427,7 +1482,7 @@ focus_tree = {
 		icon = GFX_
 		prerequisite = { focus = }
 		mutually_exclusive = { focus = LUX_foster_an_european_community focus = LUX_empower_the_chamber_of_deputies}
-		x = 6
+		x = 5
 		y = 0
 		relative_position_id = LUX_foster_an_european_community
 
@@ -1463,7 +1518,7 @@ focus_tree = {
 		id = LUX_a_broad_politcal_coalition
 		icon = GFX_
 		prerequisite = { focus = LUX_empower_the_chamber_of_deputies }
-		x = 5
+		x = 4
 		y = 1
 		relative_position_id = LUX_foster_an_european_community
 
@@ -1499,7 +1554,7 @@ focus_tree = {
 		id = LUX_support_urbanization
 		icon = GFX_
 		prerequisite = { focus = LUX_a_broad_politcal_coalition }
-		x = 5
+		x = 4
 		y = 2
 		relative_position_id = LUX_foster_an_european_community
 
@@ -1535,7 +1590,7 @@ focus_tree = {
 		id = LUX_the_catholic_colitaion
 		icon = GFX_
 		prerequisite = { focus = LUX_support_urbanization }
-		x = 5
+		x = 4
 		y = 3
 		relative_position_id = LUX_foster_an_european_community
 
@@ -1571,7 +1626,7 @@ focus_tree = {
 		id = LUX_stay_the_course
 		icon = GFX_
 		prerequisite = { focus = LUX_the_catholic_colitaion }
-		x = 5
+		x = 4
 		y = 4
 		relative_position_id = LUX_foster_an_european_community
 

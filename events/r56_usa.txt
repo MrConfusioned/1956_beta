@@ -113,7 +113,19 @@ country_event = { #Warplanedivison focus choice
 	picture = GFX_report_event_usa_election_generic
 
 	is_triggered_only = yes
-
+	option = { 	
+		name = r56_usa.2.c
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		army_experience = 5
+		air_experience = -5
+		add_political_power = -5
+	}
 
 	option = { 	
 		name = r56_usa.2.a
@@ -125,10 +137,11 @@ country_event = { #Warplanedivison focus choice
 			}
 		}
 		set_country_flag = rt56_arnold_in_the_field
+		add_political_power = 5
 		create_corps_commander = {
 			name = "Henry Arnold"
 			picture = "r56_portrait_Hap_Arnold.dds"
-			traits = { air_force_ties organizer }
+			traits = { unpopular air_force_ties organizer meticulous }
 		
 			skill = 1
 			rank = 1
@@ -144,8 +157,9 @@ country_event = { #Warplanedivison focus choice
 		ai_chance = {
 			factor = 50
 		}
+		air_experience = 10
 		set_country_flag = rt56_arnold_unlock_tt
-		custom_effect_tooltip = available_political_advisor
+		custom_effect_tooltip = available_chief_of_airforce
 		show_ideas_tooltip = henry_arnold
 	}
 }
