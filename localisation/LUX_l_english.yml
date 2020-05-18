@@ -17,6 +17,10 @@
  LUX_strengthen_rietspartei_position:0 "Empower the Technocrats"
  #
  LUX_armed_republic:0 "Prepare for Confrontations"
+ #
+ LUX_demand_french_guarantee:0 "Ask For A French Guarantee"
+ #
+ LUX_pentition_for_soviet_aid:0 "Pentition for Soviet Aide"
 
  LUX_politcal_safe_heaven_tt:0 "For each §YNeighboring Country§! that is not Communist grain: Politcal Power: §G+10§!. and Change in popularity of Communism: §G1.00%§!."
  prepareforwar:0 "Prepare For War"

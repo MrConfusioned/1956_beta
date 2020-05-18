@@ -34,9 +34,9 @@ country_event = {
   option = { #Be communist thought hardass civil war if you'd like... loser
 		name = r56_paraguay.2.a
 		ai_chance = {
-				factor = 0.5
+				factor = 1
 				modifier = {
-					factor = 100
+					factor = 101
 					is_historical_focus_on = no
 				}
 		}
